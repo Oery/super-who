@@ -1,4 +1,4 @@
-rootProject.name = "ExampleMod"
+rootProject.name = "SuperWhoMod"
 
 pluginManagement {
     repositories {
