@@ -21,6 +21,9 @@ public class SuperWhoCommand extends Command {
         Collection<NetworkPlayerInfo> playerInfoMap = mc.getNetHandler().getPlayerInfoMap();
 
         for (NetworkPlayerInfo info : playerInfoMap) {
+            if (info.getGameProfile().getId().version() != 4) {
+                continue;
+            }
             if (playerListString.length() > 8) {
                 playerListString.append(", ");
             }
